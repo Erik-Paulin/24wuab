@@ -1,17 +1,13 @@
 
 #wrapper{
     display: grid;
-    grid-template-columns: 50px 1fr;
     grid-template-areas:
-    'menu hd'
-    'nv nv'
-    'mn mn'
-    'ft ft'
+    'hd'
+    'mn'
+    'ft'
 }
 
-.title {
-    grid-area: hd;
-}
+
 
 a{
     color:#fff8dc
@@ -22,7 +18,7 @@ a{
 }
 
 .deskmenu{
-    grid-area: nv;
+    grid-area: hd;
     display:flex;
     justify-content: space-around;
     flex-direction: row;
@@ -48,12 +44,10 @@ body,ul{
 .menu-button{
     cursor: pointer;
     display: inline;
-    grid-area: menu;
 }
 
 .menu-button i.material-icons{
     font-size: 2.5rem;
-
 }
 
 .show{

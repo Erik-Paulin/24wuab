@@ -1,32 +1,23 @@
-
 #wrapper{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-areas:
-    'menu hd'
-    'nv nv'
-    'mn mn'
+    display:grid;
+    grid-template-areas: 
+    'hd hd'
+    'mn nv'
     'ft ft'
-}
-
-.title {
-    grid-area: hd;
 }
 
 a{
     color:#fff8dc
 }
 
-.Wrapper{
+.wrapper{
     grid-area: mn;
 }
 
 .deskmenu{
     grid-area: nv;
     display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background: #3F4E4F;
+    background: #d4af37;
 }
 
 body,ul{
@@ -36,7 +27,7 @@ body,ul{
 .menu{
     height: 100vh;
     width: 80vw;
-    background: #3F4E4F;
+    background: #d4af37;
     position: fixed;
     top: 0;
     left: -90vw;
@@ -48,12 +39,10 @@ body,ul{
 .menu-button{
     cursor: pointer;
     display: inline;
-    grid-area: menu;
 }
 
 .menu-button i.material-icons{
     font-size: 2.5rem;
-
 }
 
 .show{
@@ -95,7 +84,7 @@ body,ul{
 @media screen and (min-width: 701px){
     
     body{
-        background-color: #2C3639;
+        background-color: #004c6d;
         color: #fff8dc;
     }
     .deskmenu{

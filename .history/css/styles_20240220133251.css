@@ -1,31 +1,27 @@
 
 #wrapper{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-areas:
-    'menu hd'
-    'nv nv'
-    'mn mn'
-    'ft ft'
+    display: ;
 }
 
-.title {
-    grid-area: hd;
+#menu{
+    display:grid;
+    grid-template-areas: 
+    'hd hd'
+    'mn nv'
+    'ft ft'
 }
 
 a{
     color:#fff8dc
 }
 
-.Wrapper{
+.menuicon{
     grid-area: mn;
 }
 
 .deskmenu{
     grid-area: nv;
     display:flex;
-    justify-content: space-around;
-    flex-direction: row;
     background: #3F4E4F;
 }
 
@@ -48,12 +44,10 @@ body,ul{
 .menu-button{
     cursor: pointer;
     display: inline;
-    grid-area: menu;
 }
 
 .menu-button i.material-icons{
     font-size: 2.5rem;
-
 }
 
 .show{
