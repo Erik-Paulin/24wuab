@@ -1,11 +1,11 @@
 
 #wrapper{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-areas:
-    'mu mu hd hd hd hd hd hd hd hd hd hd hd'
-    'nv nv nv nv nv nv nv nv nv nv nv nv nv'
-    'mn mn mn mn mn mn mn mn mn mn mn mn mn'
+    'menu hd hd hd '
+    'nv nv nv nv'
+    'mn mn mn mn'
     'ft ft ft ft ft ft ft ft ft ft ft ft ft'
 }
 
@@ -50,7 +50,7 @@ body,ul{
     align-items: center;
     cursor: pointer;
     display: inline;
-    grid-area: mu;
+    grid-area: menu;
 }
 
 .menu-button i.material-icons{

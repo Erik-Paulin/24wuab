@@ -1,12 +1,12 @@
 
 #wrapper{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-areas:
-    'mu mu hd hd hd hd hd hd hd hd hd hd hd'
-    'nv nv nv nv nv nv nv nv nv nv nv nv nv'
-    'mn mn mn mn mn mn mn mn mn mn mn mn mn'
-    'ft ft ft ft ft ft ft ft ft ft ft ft ft'
+    'menu hd'
+    'nv nv'
+    'mn mn'
+    'ft ft'
 }
 
 .title {
@@ -46,11 +46,10 @@ body,ul{
 }
 
 .menu-button{
-    justify-content: space-around;
-    align-items: center;
+    justify-content: ;
     cursor: pointer;
     display: inline;
-    grid-area: mu;
+    grid-area: menu;
 }
 
 .menu-button i.material-icons{

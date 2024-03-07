@@ -1,0 +1,6 @@
+.header{
+    grid-template-areas
+    'menu header header'
+}
+
+.menu
