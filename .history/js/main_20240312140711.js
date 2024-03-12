@@ -1,5 +1,5 @@
-let button = document.querySelector("#loginBtn")
-button.addEventListener("click",myMenuFunction)
+let button = document.querySelector(".menu-button")
+button.addEventListener("click",men)
 
 function myMenuFunction() {
   var i = document.getElementById("navMenu");

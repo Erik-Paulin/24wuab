@@ -20,12 +20,12 @@
         </div>
         <div class="nav-menu" id="navMenu">
           <ul>
-            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="index.html" class="link active">Home</a></li>
             <li><a href="#" class="link">Services</a></li>
             <li><a href="#" class="link">About</a></li>
-            <li><a href="login.html" class="link">Login</a></li>
           </ul>
         </div>
+
         <div class="nav-menu-btn">
           <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
@@ -37,6 +37,18 @@
         <footer></footer>
       </div>
     </div>
+
     <script src="js/main.js"></script>
+    <script>
+      function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+
+        if (i.className === "nav-menu") {
+          i.className += " responsive";
+        } else {
+          i.className = "nav-menu";
+        }
+      }
+    </script>
   </body>
 </html>

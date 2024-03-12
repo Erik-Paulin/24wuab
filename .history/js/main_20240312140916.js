@@ -1,4 +1,4 @@
-let button = document.querySelector("#loginBtn")
+let button = document.querySelector("")
 button.addEventListener("click",myMenuFunction)
 
 function myMenuFunction() {
