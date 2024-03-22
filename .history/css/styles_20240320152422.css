@@ -210,10 +210,6 @@ header{
     bottom: 0;
 
 }
-#services{
-    background-image: url("hands.jpg");
-}
-
 .Wrapper{
     display: flex;
     flex-direction: column;
@@ -226,9 +222,9 @@ header{
         min-height: 100vh;
         display: grid;
         grid-template-rows: 3fr 19fr 5fr;
-        grid-template-columns: 11fr;
+        grid-template-columns: 1fr 11fr 1fr;
         grid-template-areas:
-        'nav'
+        'nav nav nav'
         'main'
         'foot'
     }

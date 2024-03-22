@@ -89,6 +89,9 @@ body{
 
 .Wrapper{
     grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'bord mn bord'
 }
 
 .form-box{
@@ -210,100 +213,59 @@ header{
     bottom: 0;
 
 }
-#services{
-    background-image: url("hands.jpg");
-}
 
-.Wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    justify-content:center;
-}
 @media only screen and (max-width: 810px) {
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+
     .wrapper{
         min-height: 100vh;
         display: grid;
         grid-template-rows: 3fr 19fr 5fr;
-        grid-template-columns: 11fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-        'nav'
-        'main'
-        'foot'
+        'nav nav nav nav nav nav nav nav nav nav nav nav nav'
+        'main main main main main main main main main main main main main'
+        'foot foot foot foot foot foot foot foot foot foot foot foot foot'
     }
-    .form-box{
-        width: 100%;
-        height: 500px;
-    }
-    .register-container, .login-container{
-        width: 100%;
-        padding: 0 20px;
-    }
-    .register-container .two-forms{
-        flex-direction: column;
-        gap: 0;
-    }
+    
     .Wrapper{
-        padding: 50px
+        grid-area: main;
     }
-    .nav-button{
-        display: none;
+    
+    .nav{
+        grid-area: nav;
     }
-    .nav-menu.responsive{
-        top: 100px;
+    
+    .profile{
+        background-color: rgba(255, 255, 255, 0.5)
     }
-    .nav-menu{
-        position: absolute;
-        top: -800px;
-        display: flex;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
-        width: 100%;
-        height: 90vh;
-        backdrop-filter: blur(20px);
-        transition: .3s;
+    
+    .tree{
+        background-color: black;
     }
-    .nav-menu ul{
-        flex-direction: column;
-        text-align: center;
+    
+    
+    .index{
+        display: grid;
+        grid-template-areas: 
+        'info'
     }
-    .nav-menu-btn{
-        display: block;
+    
+    .info{
+        background-color:rgba(0, 0, 0,0.1);
+        color: rgba(255, 255, 255);
     }
-    .nav-menu-btn i{
-        font-size: 25px;
-        color: #fff;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: .3s;
-    }
-    .nav-menu-btn i:hover{
-        background: rgba(255, 255, 255, 0.15);
-    }
-    .foot{
-        font-size: 70%;
-    }
-    img{
-        transform: scale();
-    }
+    
 }
-@media only screen and (max-width: 500px) {
-    .wrapper{
-        min-height: 100vh;
-    }
-    .form-box{
-        width: 100%;
-        height: 500px;
-    }
-    .register-container, .login-container{
-        width: 100%;
-        padding: 0 20px;
-    }
-    .register-container .two-forms{
-        flex-direction: column;
-        gap: 0;
-    }
-}
+

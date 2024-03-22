@@ -210,10 +210,9 @@ header{
     bottom: 0;
 
 }
-#services{
-    background-image: url("hands.jpg");
+.info{
+    background-image: url("");
 }
-
 .Wrapper{
     display: flex;
     flex-direction: column;

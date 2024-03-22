@@ -210,14 +210,8 @@ header{
     bottom: 0;
 
 }
-#services{
-    background-image: url("hands.jpg");
-}
-
 .Wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    dispaly: flex;
     padding: 50px;
     justify-content:center;
 }
@@ -226,11 +220,11 @@ header{
         min-height: 100vh;
         display: grid;
         grid-template-rows: 3fr 19fr 5fr;
-        grid-template-columns: 11fr;
+        grid-template-columns: 1fr 11fr 1fr;
         grid-template-areas:
-        'nav'
-        'main'
-        'foot'
+        'nav nav nav'
+        'bord main bord'
+        'foot foot foot'
     }
     .form-box{
         width: 100%;
@@ -287,7 +281,7 @@ header{
         font-size: 70%;
     }
     img{
-        transform: scale();
+        transform: scale(0.5);
     }
 }
 @media only screen and (max-width: 500px) {

@@ -210,7 +210,10 @@ header{
     bottom: 0;
 
 }
-#services{
+#info{
+    background-image: url('img/hands.jpg');
+    background-image: url("img/hands.jpg");
+    background-image: url(hands.jpg);
     background-image: url("hands.jpg");
 }
 

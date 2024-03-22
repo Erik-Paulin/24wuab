@@ -210,8 +210,11 @@ header{
     bottom: 0;
 
 }
-#services{
-    background-image: url("hands.jpg");
+#info{
+    background-image: url(img/hands.jpg);
+    background-image: url(img/hands.jpg);
+    background-image: url(img/hands.jpg);
+    background-image: url(img/hands.jpg);
 }
 
 .Wrapper{
