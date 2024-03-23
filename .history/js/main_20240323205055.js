@@ -12,7 +12,7 @@ var b = document.getElementById("registerBtn");
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 
-// Functions är till stor del lånade med specifiering gjort av mig
+// Functions är till delvis lånade med specifiering gjort av mig
 
 function myMenuFunction() {
   var i = document.getElementById("navMenu");

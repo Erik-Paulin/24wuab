@@ -1,4 +1,4 @@
-/* Majoriteten av css filen tar stor inspiration från andra projekt och intruktionsfilmer från t.ex youtube*/
+
 
 /* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -210,7 +210,9 @@ header{
     background: linear-gradient(0deg,rgba(30,30,30, 0.8), transparent);
     position: fixed;
     bottom: 0;
+
 }
+
 .Wrapper{
     display: flex;
     flex-direction: column;
@@ -218,6 +220,7 @@ header{
     justify-content:center;
     padding: 50px;
 }
+
 .Associates{
     display: grid;
     gap: 15px;
@@ -234,6 +237,7 @@ header{
     grid-area: nv;
     height: 100px;
 }
+
 .profile{
     max-width: 200px;
     justify-self: start;
@@ -244,6 +248,7 @@ header{
 .info{
     grid-area: info;
 }
+
 .one1{
     grid-area: one;
     display: grid;
@@ -259,6 +264,7 @@ header{
     grid-template-areas:
     'img fr info'
 }
+
 .two2{
     grid-area: two;
     display: grid;
@@ -274,6 +280,8 @@ header{
     grid-template-areas:
     'img fr info'
 }
+
+
 @media only screen and (max-width: 850px) {
     .wrapper{
         min-height: 100vh;
