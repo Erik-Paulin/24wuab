@@ -10,7 +10,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: rgba(39, 39, 39, 0.6);
+    background: url("images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background: rgba(39, 39, 39, 0.4);
     color: white;
 }
 .wrapper{
@@ -60,9 +65,7 @@ body{
 }
 .btn{
     display: flex;
-    align-self:center;
-    align-items:center;
-    justify-content: center;
+    align-self;
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -333,6 +336,9 @@ header{
     }
     .foot{
         font-size: 70%;
+    }
+    img{
+        transform: scale();
     }
     .Associates{
         display: grid;

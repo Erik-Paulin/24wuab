@@ -10,7 +10,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: rgba(39, 39, 39, 0.6);
+    background: url("images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background: rgba(39, 39, 39, 0.4);
     color: white;
 }
 .wrapper{
@@ -58,11 +63,7 @@ body{
 .link:hover, .active{
     border-bottom: 2px solid #fff;
 }
-.btn{
-    display: flex;
-    align-self:center;
-    align-items:center;
-    justify-content: center;
+.nav-button .btn{
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -303,7 +304,7 @@ header{
     }
     .nav-menu{
         position: absolute;
-        top: -2000px;
+        top: -800px;
         display: flex;
         justify-content: center;
         background: rgba(255, 255, 255, 0.2);
@@ -334,6 +335,9 @@ header{
     .foot{
         font-size: 70%;
     }
+    img{
+        transform: scale();
+    }
     .Associates{
         display: grid;
         grid-template-rows: 100px 1fr 1fr;
@@ -349,7 +353,7 @@ header{
         min-height: 110vh;
     }
     .register-container, .login-container{
-        width: 70%;
+        width: 100%;
         padding: 0 20px;
     }
     .form-box{
