@@ -16,7 +16,7 @@ body{
 .wrapper{
     justify-content: center;
     justify-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
     min-width: 100%;
     display: grid;
     grid-template-rows: 5fr 19fr 5fr;
@@ -208,7 +208,6 @@ header{
 }
 
 .Wrapper{
-    width: 100%;
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -221,12 +220,12 @@ header{
     gap: 15px;
     grid-area: asmn;
     height: 100%;
-    grid-template-rows: 100px 5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 3fr 1fr;
     grid-template-areas: 
-    'nv'
-    'one'
-    'two'
-    'ft'
+    'nv nv'
+    'one two'
+    'ft ft'
 }
 .nv{
     grid-area: nv;
@@ -272,11 +271,12 @@ header{
     grid-template-areas:
     'img fr info'
 }
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
     .wrapper{
         min-height: 100vh;
         display: grid;
         grid-template-rows: 3fr 19fr 5fr;
+        grid-template-columns: 11fr;
         grid-template-areas:
         'nav'
         'main'
@@ -291,7 +291,6 @@ header{
         gap: 0;
     }
     .Wrapper{
-        width:100%;
         padding: 50px
     }
     .nav-button{
@@ -343,20 +342,20 @@ header{
         'two'
     }
 }
-@media (max-width: 300px) {
+@media only screen and (max-width: 300px) {
     .wrapper{
-        max-width: 100%;
+        min-height: 110vh;
     }
     .register-container, .login-container{
-        width: 30%;
+        width: 70%;
         padding: 0 20px;
     }
     .form-box{
-        width: 30%;
+        width: 70%;
         height: 500px;
     }
     .register-container, .login-container{
-        width: 30%;
+        width: 70%;
         padding: 0 20px;
     }
     .register-container .two-forms{
