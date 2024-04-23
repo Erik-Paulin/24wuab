@@ -16,8 +16,8 @@ body{
 .wrapper{
     justify-content: center;
     justify-items: center;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
     display: grid;
     grid-template-rows: 5fr 19fr 5fr;
     grid-template-areas:

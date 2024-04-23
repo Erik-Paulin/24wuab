@@ -16,8 +16,8 @@ body{
 .wrapper{
     justify-content: center;
     justify-items: center;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
     display: grid;
     grid-template-rows: 5fr 19fr 5fr;
     grid-template-areas:
@@ -233,20 +233,17 @@ header{
     height: 100px;
 }
 .profile{
+    object-fit: fill;    
     justify-self: start;
 }
 .img{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
     grid-area: img;
 }
 .info{
     grid-area: info;
 }
 .one1{
-    height: 100%;
-    width: 100%;
+    height: 50%;
     grid-area: one;
     display: grid;
     border-style: solid;
