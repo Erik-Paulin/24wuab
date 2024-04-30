@@ -387,6 +387,7 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
@@ -403,13 +404,13 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
     }
     img{
         display: grid;
-        align-self:start;
         grid-area: img;
         object-fit: cover;
         width: 100%;
@@ -447,9 +448,9 @@ img{
         padding-right: 10px;
         align-items: center;
         justify-items: end;
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 2fr 1fr 4fr;
         grid-template-areas:
-        'img'
+        'img
         'info'
     }
     .two2{

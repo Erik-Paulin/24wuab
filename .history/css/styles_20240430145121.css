@@ -387,6 +387,7 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
@@ -409,7 +410,6 @@ img{
     }
     img{
         display: grid;
-        align-self:start;
         grid-area: img;
         object-fit: cover;
         width: 100%;

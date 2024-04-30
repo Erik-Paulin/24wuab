@@ -409,7 +409,6 @@ img{
     }
     img{
         display: grid;
-        align-self:start;
         grid-area: img;
         object-fit: cover;
         width: 100%;

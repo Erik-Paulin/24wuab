@@ -107,6 +107,7 @@ body{
     justify-content: center;
     width: 512px;
     height: 420px;
+    overflow: hidden;
     z-index: 2;
 }
 .login-container{
@@ -119,7 +120,7 @@ body{
 }
 .register-container{
     position: absolute;
-    right: -520vw;
+    right: -520px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -309,13 +310,7 @@ img{
         width:100%;
         padding: 50px
     }
-    .form-box{
-        width: 100%;
-        height: 500px;
-    }
     .register-container, .login-container{
-        align-self: center;
-        justify-self: center;
         width: 100%;
         padding: 0 20px;
     }
@@ -387,6 +382,7 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
@@ -403,13 +399,13 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
     }
     img{
         display: grid;
-        align-self:start;
         grid-area: img;
         object-fit: cover;
         width: 100%;
@@ -420,14 +416,16 @@ img{
     .wrapper{
         width: 100%;
     }
+    .register-container, .login-container{
+        width: 30%;
+        padding: 0 20px;
+    }
     .form-box{
-        width: 100%;
-        height: 500px;
+        width: 30%;
+        height: 600px;
     }
     .register-container, .login-container{
-        align-self:center;
-        justify-self: center;
-        width: 100%;
+        width: 30%;
         padding: 0 20px;
     }
     .register-container .two-forms{
@@ -447,10 +445,9 @@ img{
         padding-right: 10px;
         align-items: center;
         justify-items: end;
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 2fr 1fr 4fr;
         grid-template-areas:
-        'img'
-        'info'
+        'img fr info'
     }
     .two2{
         grid-area: two;

@@ -25,18 +25,7 @@ body{
     'main'
     'foot'
 }
-.asswrapper{
-    justify-content: center;
-    justify-items: center;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 100px 19fr 100px;
-    grid-template-areas:
-    'nav'
-    'main'
-    'foot'
-}
+
 .nav{
     grid-area: nav;
     position: fixed;
@@ -110,8 +99,9 @@ body{
     z-index: 2;
 }
 .login-container{
+    align-self: center;
+    justify-self: center;
     position: absolute;
-    left: 4px;
     width: 1fr;
     display: flex;
     flex-direction: column;
@@ -119,7 +109,7 @@ body{
 }
 .register-container{
     position: absolute;
-    right: -520vw;
+    right: -50px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -227,73 +217,7 @@ header{
     justify-content:center;
     padding: 50px;
 }
-.Associates{
-    display: grid;
-    gap: 15px;
-    grid-area: asmn;
-    height: 100%;
-    width: 100%;
-    grid-template-rows: 100px 5fr 5fr 1fr;
-    grid-template-areas: 
-    'nv'
-    'one'
-    'two'
-    'ft'
-}
-.nv{
-    grid-area: nv;
-    height: 100px;
-}
-.profile{
-    justify-self: start;
-}
-img{
-    display: grid;
-    grid-area: img;
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-}
-.info{
-    grid-area: info;
-}
 
-@media (min-width: 851px) {
-    .one1{
-        height: 100%;
-        width: 100%;
-        grid-area: one;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 10px;
-        border-width: 5px;
-        border-radius: 5px;
-        align-items: center;
-        justify-items: end;
-        grid-template-columns: 2fr 4fr;
-        grid-template-areas:
-        'img info'
-    }
-    .two2{
-        grid-area: two;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 10px;
-        border-width: 5px;
-        border-radius: 5px;
-        align-items: center;
-        justify-items: end;
-        grid-template-columns: 2fr 4fr;
-        grid-template-areas:
-        'img info'
-    }
-    .info{
-        grid-area: info;
-        padding: 20px;
-    }
-}
 @media (max-width: 850px) {
     .wrapper{
         height: 100vh;
@@ -312,7 +236,7 @@ img{
     .form-box{
         width: 100%;
         height: 500px;
-    }
+    }   
     .register-container, .login-container{
         align-self: center;
         justify-self: center;
@@ -362,59 +286,7 @@ img{
     .foot{
         font-size: 70%;
     }
-    .Associates{
-        display: grid;
-        gap: 10px;
-        grid-area: asmn;
-        height: 100vh;
-        width: 100%;
-        grid-template-rows: 100px 1fr 1fr 100px;
-        grid-template-areas: 
-        'nv'
-        'one'
-        'two'
-        'ft'
-    }
-    .one1{
-        height: 1fr;
-        width: 100%;
-        grid-area: one;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 5px;
-        border-width: 5px;
-        border-radius: 5px;
-        align-items: center;
-        justify-items: end;
-        grid-template-areas:
-        'img'  
-        'info'
-    }
-    .two2{
-        height: 1fr;
-        width: 100%;
-        grid-area: two;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 5px;
-        border-width: 5px;
-        border-radius: 5px;
-        align-items: center;
-        justify-items: end;
-        grid-template-areas:
-        'img'  
-        'info'
-    }
-    img{
-        display: grid;
-        align-self:start;
-        grid-area: img;
-        object-fit: cover;
-        width: 100%;
-        max-height: 100%;
-    }
+
 }
 @media (max-width: 300px) {
     .wrapper{
@@ -434,39 +306,5 @@ img{
         flex-direction: column;
         gap: 0;
     }
-    .one1{
-        height: 100%;
-        width: 100%;
-        grid-area: one;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 20px;
-        border-width: 5px;
-        border-radius: 5px;
-        padding-right: 10px;
-        align-items: center;
-        justify-items: end;
-        grid-template-columns: 2fr 4fr;
-        grid-template-areas:
-        'img'
-        'info'
-    }
-    .two2{
-        grid-area: two;
-        display: grid;
-        border-style: solid;
-        border-color: white;
-        padding: 20px;
-        border-width: 5px;
-        border-radius: 5px;
-        padding-right: 10px;
-        align-items: center;
-        justify-items: end;
-        grid-template-rows: 2fr 1fr 4fr;
-        grid-template-areas:
-        'img' 
-        'fr' 
-        'info'
-    }
+
 }

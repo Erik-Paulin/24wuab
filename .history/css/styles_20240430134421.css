@@ -119,7 +119,7 @@ body{
 }
 .register-container{
     position: absolute;
-    right: -520vw;
+    right: -520px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -309,16 +309,10 @@ img{
         width:100%;
         padding: 50px
     }
-    .form-box{
-        width: 100%;
-        height: 500px;
-    }
-    .register-container, .login-container{
-        align-self: center;
-        justify-self: center;
+    /* .register-container, .login-container{
         width: 100%;
         padding: 0 20px;
-    }
+    } */
     .register-container .two-forms{
         flex-direction: column;
         gap: 0;
@@ -387,6 +381,7 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
@@ -403,13 +398,13 @@ img{
         border-radius: 5px;
         align-items: center;
         justify-items: end;
+        grid-template-rows: 2fr 4fr;
         grid-template-areas:
         'img'  
         'info'
     }
     img{
         display: grid;
-        align-self:start;
         grid-area: img;
         object-fit: cover;
         width: 100%;
@@ -425,8 +420,7 @@ img{
         height: 500px;
     }
     .register-container, .login-container{
-        align-self:center;
-        justify-self: center;
+        align-self
         width: 100%;
         padding: 0 20px;
     }
@@ -447,10 +441,9 @@ img{
         padding-right: 10px;
         align-items: center;
         justify-items: end;
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 2fr 1fr 4fr;
         grid-template-areas:
-        'img'
-        'info'
+        'img fr info'
     }
     .two2{
         grid-area: two;
