@@ -250,7 +250,6 @@ header{
 img{
     display: grid;
     grid-area: img;
-    justify-self: center;
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -258,7 +257,6 @@ img{
 .options{
     display:grid;
     width: 70%;
-    height: fit-content;
     padding: 10px;
     grid-template-areas:
     'title'
@@ -267,40 +265,28 @@ img{
 .title{
     justify-self: center;
     grid-area: title;
-
 }
 .services{
-    display:grid;
     grid-area: services;
-    margin: 20px;
     grid-template-areas:
     'premium'
     'advanced'
     'basic'
 }
-
 .premium{
-    display:grid;
-    border: 5px solid red ;
     grid-area: premium;
-    padding: 40px;
-    margin: 50px;
     grid-template-areas:
     'img'
     'txt'
 }
 .advanced{
     grid-area: advanced;
-    padding: 40px;
-    margin: 50px;
     grid-template-areas:
     'img'
     'txt'
 }
 .basic{
     grid-area: basic;
-    padding: 40px;
-    margin: 50px;
     grid-template-areas:
     'img'
     'txt'

@@ -250,7 +250,7 @@ header{
 img{
     display: grid;
     grid-area: img;
-    justify-self: center;
+    al
     object-fit: cover;
     width: 100%;
     max-height: 100%;
