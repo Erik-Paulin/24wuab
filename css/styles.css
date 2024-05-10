@@ -300,26 +300,34 @@ img{
     'basic'
 }
 .premium{
-
     display:grid;
     border: 5px solid white ;
     border-radius: 10px;
     grid-area: premium;
     padding: 40px;
+    margin: 30px;
     grid-template-areas:
     'img_s'
-    'txt';
+    'txt'
 }
 .advanced{
+    display:grid;
+    border: 5px solid white ;
+    border-radius: 10px;
     grid-area: advanced;
     padding: 40px;
+    margin: 30px;
     grid-template-areas:
     'img_s'
     'txt'
 }
 .basic{
+    display:grid;
+    border: 5px solid white ;
+    border-radius: 10px;
     grid-area: basic;
     padding: 40px;
+    margin: 30px;
     grid-template-areas:
     'img_s'
     'txt'
