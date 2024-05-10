@@ -19,9 +19,13 @@ function myMenuFunction() {
 function login() {
   x.style.left = "5px";
   y.style.right = "-520px";
+  x.style.opacity = 1;
+  y.style.opacity = 0;
 }
 
 function register() {
   x.style.left = "-520px";
   y.style.right = "5px";
+  x.style.opacity = 0;
+  y.style.opacity = 1;
 }
