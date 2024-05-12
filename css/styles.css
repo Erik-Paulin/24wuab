@@ -112,7 +112,7 @@ body{
 .login-container{
     position: absolute;
     left: 4px;
-    width: 1fr;
+    width: 500px;
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
@@ -227,6 +227,20 @@ header{
     justify-content:center;
     padding: 0px;
 }
+.indexWrapper{
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    padding: 0px;
+    margin-top: 100px;
+    grid-template-areas:
+    'tit'
+    'indImg'
+    'sell'
+    'opt'
+}
 .Associates{
     display: grid;
     gap: 15px;
@@ -333,6 +347,51 @@ img{
     grid-template-areas:
     'img_s'
     'txt'
+}
+.index{
+    grid-area: indImg;
+    display: grid;
+    justify-self: center;
+    object-fit: cover;
+    margin-bottom: 80px;
+    width: 50%;
+
+    max-height:100%;
+}
+.sellpoints{
+    grid-area: sell;
+    display:grid;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'more'
+    'accurate'
+}
+.more, .acc{
+    display: grid;
+    margin: 10px;
+    padding: 30px;
+    border: 5px solid white ;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: center;
+}
+.more{
+    grid-area: more;
+}
+.acc{
+    grid-area: accurate;
+}
+.packages{
+    grid-area: opt;
+    display:grid;
+    border: 5px solid white ;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 30px;
+    margin-bottom: 100px;
 }
 @media (min-width: 851px) {
     .one1{
@@ -458,7 +517,7 @@ img{
         'ft'
     }
     .one1{
-        height: 1fr;
+        height: 500px;
         width: 100%;
         grid-area: one;
         display: grid;
@@ -474,7 +533,7 @@ img{
         'info'
     }
     .two2{
-        height: 1fr;
+        height: 500px;
         width: 100%;
         grid-area: two;
         display: grid;
